@@ -24,7 +24,7 @@ jobs:
 
       - name: Test pkg
         run: go test -cover ./...
-        working-directory: ./pkg
+        working-directory: ./pkg/resource
 
  test-linux:
     name: Test Linux
@@ -42,5 +42,5 @@ jobs:
 
       - name: Test kpg
         run: go test -cover ./...
-        working-directory: ./pkg
+        working-directory: ./pkg/resource
 
