@@ -23,6 +23,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Test pkg
+        shell: pwsh
         run: go test -cover ./...
         working-directory: ./pkg/resource
 
